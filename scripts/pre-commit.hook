@@ -3,7 +3,7 @@
 CPPCHECK_OPTS="-I. -I./include --error-exitcode=1 ."
 
 RETURN=0
-CLANG_FORMAT=$(which clang-format)
+CLANG_FORMAT=$(which clang-format-3.9)
 if [ $? -ne 0 ]; then
     echo "[!] clang-format not installed. Unable to check source file format policy." >&2
     exit 1
